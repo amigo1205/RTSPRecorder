@@ -1,0 +1,335 @@
+﻿Build started 2016/10/12 19:13:16.
+     1>Project "D:\ffmpeg_sln_vs2013-master\RTSPRecorder\RTSPRecorder.vcxproj" on node 2 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D RTSPRECORDER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\RTSPRecorder.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D RTSPRECORDER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\cmdutils.c ..\ffmpeg.c ..\ffmpeg_dxva2.c ..\ffmpeg_filter.c ..\ffmpeg_opt.c RTSPRecorder.c
+         cmdutils.c
+     1>d:\ffmpeg_sln_vs2013-master\include\libavutil\rational.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\ffmpeg_sln_vs2013-master\include\libavformat\os_support.h(113): warning C4005: 'HAVE_STRUCT_POLLFD' : macro redefinition
+                 d:\ffmpeg_sln_vs2013-master\config.h(318) : see previous definition of 'HAVE_STRUCT_POLLFD'
+     1>..\cmdutils.c(119): warning C4133: 'function' : incompatible types - from 'char [1]' to 'LPCWSTR'
+     1>..\cmdutils.c(204): warning C4090: 'function' : different 'const' qualifiers
+     1>..\cmdutils.c(321): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>..\cmdutils.c(323): warning C4305: 'function' : truncation from '__int64' to 'double'
+     1>..\cmdutils.c(323): warning C4244: '=' : conversion from 'double' to 'int64_t', possible loss of data
+     1>..\cmdutils.c(327): warning C4056: overflow in floating-point constant arithmetic
+     1>..\cmdutils.c(327): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\cmdutils.c(329): warning C4056: overflow in floating-point constant arithmetic
+     1>..\cmdutils.c(513): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(462) : see declaration of 'getenv'
+     1>..\cmdutils.c(564): warning C4090: 'function' : different 'const' qualifiers
+     1>..\cmdutils.c(567): warning C4090: 'function' : different 'const' qualifiers
+     1>..\cmdutils.c(571): warning C4090: 'function' : different 'const' qualifiers
+     1>..\cmdutils.c(579): warning C4090: 'function' : different 'const' qualifiers
+     1>..\cmdutils.c(606): warning C4090: 'function' : different 'const' qualifiers
+     1>..\cmdutils.c(956): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\time.inl(112) : see declaration of 'localtime'
+     1>..\cmdutils.c(996): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>..\cmdutils.c(1000): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\cmdutils.c(1053): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\cmdutils.c(1129): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(195) : see declaration of 'strncpy'
+     1>..\cmdutils.c(1135): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(195) : see declaration of 'strncpy'
+     1>..\cmdutils.c(1138): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : see declaration of 'strtok'
+     1>..\cmdutils.c(1142): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : see declaration of 'strtok'
+     1>..\cmdutils.c(1398): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\cmdutils.c(1459): warning C4090: 'function' : different 'const' qualifiers
+     1>..\cmdutils.c(1527): warning C4090: 'function' : different 'const' qualifiers
+     1>..\cmdutils.c(1566): warning C4090: 'function' : different 'const' qualifiers
+     1>..\cmdutils.c(1934): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(462) : see declaration of 'getenv'
+     1>..\cmdutils.c(1938): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>..\cmdutils.c(1952): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(186) : see declaration of 'strncat'
+     1>..\cmdutils.c(1961): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\cmdutils.c(1962): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>..\cmdutils.c(1967): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\cmdutils.c(1968): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>..\cmdutils.c(2024): warning C4090: 'function' : different 'const' qualifiers
+     1>..\cmdutils.c(2027): warning C4090: 'function' : different 'const' qualifiers
+     1>..\cmdutils.c(2031): warning C4090: 'function' : different 'const' qualifiers
+     1>..\cmdutils.c(2055): warning C4018: '<' : signed/unsigned mismatch
+         ffmpeg.c
+     1>d:\ffmpeg_sln_vs2013-master\include\libavutil\rational.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\ffmpeg_sln_vs2013-master\include\libavutil\bswap.h(75): warning C4244: 'function' : conversion from 'uint64_t' to 'uint32_t', possible loss of data
+     1>D:\ffmpeg_sln_vs2013-master\include\libavutil/timestamp.h(45): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\ffmpeg_sln_vs2013-master\include\libavutil/timestamp.h(46): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\ffmpeg_sln_vs2013-master\include\libavutil/timestamp.h(67): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\ffmpeg_sln_vs2013-master\include\libavutil/timestamp.h(68): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\ffmpeg_sln_vs2013-master\include\libavformat/os_support.h(113): warning C4005: 'HAVE_STRUCT_POLLFD' : macro redefinition
+                 d:\ffmpeg_sln_vs2013-master\config.h(318) : see previous definition of 'HAVE_STRUCT_POLLFD'
+     1>..\ffmpeg.c(336): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _write. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(342) : see declaration of 'write'
+     1>..\ffmpeg.c(447): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _read. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(337) : see declaration of 'read'
+     1>..\ffmpeg.c(454): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(133) : see declaration of 'kbhit'
+     1>..\ffmpeg.c(455): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\conio.h(131) : see declaration of 'getch'
+     1>..\ffmpeg.c(472): warning C4244: 'initializing' : conversion from 'int64_t' to 'int', possible loss of data
+     1>..\ffmpeg.c(489): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg.c(634): warning C4996: 'vsnprintf': This function or variable may be unsafe. Consider using vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(337) : see declaration of 'vsnprintf'
+     1>..\ffmpeg.c(638): warning C4244: '=' : conversion from 'int64_t' to 'int', possible loss of data
+     1>..\ffmpeg.c(1039): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
+     1>..\ffmpeg.c(1040): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
+     1>..\ffmpeg.c(1082): warning C4244: '=' : conversion from 'int64_t' to 'double', possible loss of data
+     1>..\ffmpeg.c(1090): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
+     1>..\ffmpeg.c(1102): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
+     1>..\ffmpeg.c(1104): warning C4244: 'function' : conversion from 'double' to 'float', possible loss of data
+     1>..\ffmpeg.c(1122): warning C4244: '=' : conversion from 'int64_t' to 'int', possible loss of data
+     1>..\ffmpeg.c(1336): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>..\ffmpeg.c(1345): warning C4244: '=' : conversion from 'int64_t' to 'int', possible loss of data
+     1>..\ffmpeg.c(1374): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg.c(1408): warning C4305: 'initializing' : truncation from 'int64_t' to 'double'
+     1>..\ffmpeg.c(1417): warning C4305: 'function' : truncation from 'int64_t' to 'double'
+     1>..\ffmpeg.c(1433): warning C4244: '=' : conversion from 'int64_t' to 'double', possible loss of data
+     1>..\ffmpeg.c(1504): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\ffmpeg.c(1505): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\ffmpeg.c(1561): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg.c(1628): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\ffmpeg.c(1648): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1658): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1664): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1671): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1680): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1683): warning C4244: '=' : conversion from 'uint64_t' to 'double', possible loss of data
+     1>..\ffmpeg.c(1686): warning C4244: '=' : conversion from 'int64_t' to 'double', possible loss of data
+     1>..\ffmpeg.c(1694): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1699): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1713): warning C4244: '=' : conversion from 'int64_t' to 'int', possible loss of data
+     1>..\ffmpeg.c(1724): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1726): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1728): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1731): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1734): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1737): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1749): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1754): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1757): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(1987): warning C4996: 'avpicture_fill': was declared deprecated
+                 D:\ffmpeg_sln_vs2013-master\include\libavcodec/avcodec.h(5451) : see declaration of 'avpicture_fill'
+     1>..\ffmpeg.c(2372): warning C4244: '=' : conversion from 'int64_t' to 'int', possible loss of data
+     1>..\ffmpeg.c(2373): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg.c(2433): warning C4244: '=' : conversion from 'double' to 'int64_t', possible loss of data
+     1>..\ffmpeg.c(2478): warning C4244: '=' : conversion from 'int64_t' to 'int', possible loss of data
+     1>..\ffmpeg.c(2709): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(2741): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(2770): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg.c(2795): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg.c(2888): warning C4244: 'function' : conversion from 'uint64_t' to 'size_t', possible loss of data
+     1>..\ffmpeg.c(3036): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg.c(3057): warning C4996: 'avcodec_copy_context': was declared deprecated
+                 D:\ffmpeg_sln_vs2013-master\include\libavcodec/avcodec.h(4239) : see declaration of 'avcodec_copy_context'
+     1>..\ffmpeg.c(3145): warning C4018: '>' : signed/unsigned mismatch
+     1>..\ffmpeg.c(3155): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg.c(3278): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg.c(3461): warning C4305: 'initializing' : truncation from '__int64' to 'double'
+     1>..\ffmpeg.c(3470): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg.c(3496): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg.c(3500): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg.c(3624): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\ffmpeg.c(3628): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg.c(3718): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>..\ffmpeg.c(3762): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>..\ffmpeg.c(4116): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg.c(4169): warning C4244: '*=' : conversion from 'double' to 'int64_t', possible loss of data
+     1>..\ffmpeg.c(4171): warning C4244: '*=' : conversion from 'double' to 'int64_t', possible loss of data
+     1>..\ffmpeg.c(4597): warning C4244: '=' : conversion from 'int64_t' to 'int', possible loss of data
+         ffmpeg_dxva2.c
+     1>d:\ffmpeg_sln_vs2013-master\include\libavutil\rational.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>..\ffmpeg_dxva2.c(237): warning C4018: '<' : signed/unsigned mismatch
+         ffmpeg_filter.c
+     1>d:\ffmpeg_sln_vs2013-master\include\libavutil\rational.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>..\ffmpeg_filter.c(191): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(194): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(253): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg_filter.c(423): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(438): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(446): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(460): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(479): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(481): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(495): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(519): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(587): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(605): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(613): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg_filter.c(617): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg_filter.c(618): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(624): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(681): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg_filter.c(760): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(787): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(798): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(815): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(829): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(878): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(915): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(937): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(938): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(942): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_filter.c(1031): warning C4018: '<' : signed/unsigned mismatch
+         ffmpeg_opt.c
+     1>d:\ffmpeg_sln_vs2013-master\include\libavutil\rational.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>d:\ffmpeg_sln_vs2013-master\include\libavutil\bswap.h(75): warning C4244: 'function' : conversion from 'uint64_t' to 'uint32_t', possible loss of data
+     1>..\ffmpeg_opt.c(98): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\ffmpeg_opt.c(121): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\ffmpeg_opt.c(163): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg_opt.c(171): warning C4305: '=' : truncation from 'double' to 'float'
+     1>..\ffmpeg_opt.c(216): warning C4305: 'initializing' : truncation from '__int64' to 'double'
+     1>..\ffmpeg_opt.c(225): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg_opt.c(381): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg_opt.c(397): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>..\ffmpeg_opt.c(408): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>..\ffmpeg_opt.c(555): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\ffmpeg_opt.c(556): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\ffmpeg_opt.c(560): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg_opt.c(574): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg_opt.c(591): warning C4244: 'initializing' : conversion from 'double' to 'int64_t', possible loss of data
+     1>..\ffmpeg_opt.c(592): warning C4996: 'gmtime': This function or variable may be unsafe. Consider using gmtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\time.inl(99) : see declaration of 'gmtime'
+     1>..\ffmpeg_opt.c(650): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg_opt.c(660): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg_opt.c(698): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg_opt.c(945): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg_opt.c(954): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg_opt.c(1010): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg_opt.c(1045): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg_opt.c(1101): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg_opt.c(1104): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg_opt.c(1130): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg_opt.c(1173): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(462) : see declaration of 'getenv'
+     1>..\ffmpeg_opt.c(1180): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_opt.c(1185): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_opt.c(1242): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg_opt.c(1392): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>..\ffmpeg_opt.c(1601): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>..\ffmpeg_opt.c(1621): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\ffmpeg_opt.c(1656): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_opt.c(1675): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\ffmpeg_opt.c(1857): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>..\ffmpeg_opt.c(1859): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>..\ffmpeg_opt.c(1875): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg_opt.c(1916): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg_opt.c(1947): warning C4996: 'avcodec_copy_context': was declared deprecated
+                 D:\ffmpeg_sln_vs2013-master\include\libavcodec/avcodec.h(4239) : see declaration of 'avcodec_copy_context'
+     1>..\ffmpeg_opt.c(2303): warning C4244: 'function' : conversion from 'int64_t' to 'size_t', possible loss of data
+     1>..\ffmpeg_opt.c(2308): warning C4244: 'function' : conversion from 'int64_t' to 'int', possible loss of data
+     1>..\ffmpeg_opt.c(2314): warning C4244: '=' : conversion from 'int64_t' to 'int', possible loss of data
+     1>..\ffmpeg_opt.c(2352): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg_opt.c(2355): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg_opt.c(2433): warning C4244: 'function' : conversion from 'float' to 'int64_t', possible loss of data
+     1>..\ffmpeg_opt.c(2510): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg_opt.c(2518): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg_opt.c(2554): warning C4090: 'function' : different 'const' qualifiers
+     1>..\ffmpeg_opt.c(2576): warning C4018: '<' : signed/unsigned mismatch
+     1>..\ffmpeg_opt.c(2593): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\ffmpeg_opt.c(2600): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\ffmpeg_opt.c(2691): warning C4305: '=' : truncation from 'double' to 'float'
+     1>..\ffmpeg_opt.c(2770): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\time.inl(112) : see declaration of 'localtime'
+     1>..\ffmpeg_opt.c(2773): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(168) : see declaration of 'strerror'
+     1>..\ffmpeg_opt.c(2778): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_opt.c(2940): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>..\ffmpeg_opt.c(2969): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>..\ffmpeg_opt.c(2976): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+         RTSPRecorder.c
+     1>d:\ffmpeg_sln_vs2013-master\include\libavutil\rational.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>RTSPRecorder.c(29): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>RTSPRecorder.c(32): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>RTSPRecorder.c(34): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>RTSPRecorder.c(35): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>RTSPRecorder.c(43): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RTSPRecorder.c(44): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>RTSPRecorder.c(45): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>RTSPRecorder.c(67): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RTSPRecorder.c(75): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>RTSPRecorder.c(75): warning C4020: 'strcpy' : too many actual parameters
+     1>RTSPRecorder.c(75): error C2167: 'strcpy' : too many actual parameters for intrinsic function
+     1>RTSPRecorder.c(76): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>RTSPRecorder.c(77): warning C4013: 'StartRecord' undefined; assuming extern returning int
+     1>RTSPRecorder.c(78): warning C4172: returning address of local variable or temporary
+     1>Done Building Project "D:\ffmpeg_sln_vs2013-master\RTSPRecorder\RTSPRecorder.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.41

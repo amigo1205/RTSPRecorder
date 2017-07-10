@@ -1,0 +1,6 @@
+LIBRARY      "RTSPRecorder"
+
+EXPORTS
+Close
+RecordRtspStreamByTime
+
